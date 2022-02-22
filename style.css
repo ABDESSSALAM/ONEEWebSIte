@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+/* top */
+body{
+    width: 60%;
+    margin: 0px auto;
+    background-color: #F0F8FF;
+   
+}
+header .top{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#336699;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+
+    
+}
+header .top ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+header .top ul li{
+    list-style: none;
+    margin: 0px 10px;
+    padding: 0px 5px;
+    border-right: 2px solid #fff;
+    height: 15px;
+}
+
+header .top ul li:last-child{
+    border: none;
+}
+/* banner */
+header .banner{
+    width: 100%;
+    height: 100px;
+    background-image: url('img/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.buttom{
+    padding:10px 20px 5px 15%;
+    display: flex;
+    justify-content: space-between;
+    background: url('img/header_04.jpg') no-repeat center;
+    background-size: 100%;
+}
+
+.buttom ul{
+    display: flex;
+    justify-content: space-around;
+}
+.buttom ul li{
+    width: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    list-style-image:url('img/puce.png');
+    color: #fff;
+}
+/* end header */
+/* styling conatiner */
+.container{
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+}
+/* start navbar */
+nav {
+    width: 150px;
+    background-color:#336699;
+    cursor: pointer;
+}
+nav li{
+    margin-left: 20px;
+}
+nav .menu li{
+    padding: 5px;
+    list-style-image:url('img/puce.png');
+    color: #fff;
+    font-size: 18px;
+}
+nav .imgs li{
+    margin-left: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+    font-size: 12px;
+}
+
+section{
+    overflow-y: scroll;
+    height: 460px;
+    background-color: #D5EAFF;
+}
+
+/* news section */
+section .news-box{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    margin-top: 10px;
+}
+
+section .news-box img{
+    width: 150px;
+    height: 100px;
+    margin: 0px 5px;
+}
+section .post h4{
+    background-image: url(img/calendar.jpg);
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: 15px 15px;
+    padding-left: 20px;
+}
+section .post p{
+    font-size: 12px;
+}
+section .post {
+    position: relative;
+}
+section .post a{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+/* aside */
+aside{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+aside fieldset{
+    border-color: #b5cadf;
+    padding: 10px;
+}
+aside fieldset legend{
+    color: #E9A846;
+    font-weight: bold;
+}
+aside fieldset li{
+    list-style: none;
+}
+
+
+.presontation{
+    background-color: #D5EAFF;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+}
+section .top a{
+    border-right: 1px solid #000;
+    padding-right: 5px;
+}
+.presontation .top{
+    width: 100%;
+    text-align: center;
+}
+.presontation .top ul li{
+    display: inline-block;
+    list-style: none;
+}
+.presontation p{
+    width: 90%;
+    text-align: justify;
+    margin: 10px;
+}
+.presontation span{
+    font-weight: bold;
+}
+.presontation h2{
+    color: #3366FF;
+    margin: 10px;
+}
+.presontation h3{
+    margin: 10px;
+}
+.presontation li{
+    list-style: none;
+    padding-left: 15px;
+}
+.presontation li::before{
+    content: "-";
+
+}
+.presontation .top li::before{
+    content: "";
+}
+
+.cooperation{
+    background-color: #D5EAFF;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.cooperation .top{
+    width: 100%;
+    text-align: center;
+}
+.cooperation .top ul li{
+    display: inline-block;
+    list-style: none;
+}
+.cooperation p{
+    width: 90%;
+    text-align: justify;
+    margin: 10px;
+}
+.cooperation span{
+    font-weight: bold;
+}
+.cooperation h2{
+    color: #3366FF;
+    margin: 10px;
+}
+.cooperation h3{
+    margin: 10px;
+}
+.cooperation li{
+    padding-left: 15px;
+}
+.cooperation img , .cooperation h1{
+    margin-left: 20px;
+}
+.cooperation h1{
+    border-top: 2px solid #0000FF;
+    border-bottom: 2px solid #0000FF;
+    color: #0000FF;
+    padding: 10px;
+    margin: 10px;
+}
+/* QUALITE */
+
+.qualite{
+    background-color: #D5EAFF;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.qualite .top{
+    width: 100%;
+    text-align: center;
+}
+.qualite .top ul li{
+    display: inline-block;
+    list-style: none;
+}
+.qualite p{
+    width: 90%;
+    text-align: justify;
+    margin: 10px;
+}
+.qualite span{
+    font-weight: bold;
+}
+.qualite h2{
+    color: #3366FF;
+    margin: 10px;
+}
+.qualite h3{
+    margin: 10px;
+}
+.qualite li{
+    padding-left: 15px;
+    list-style: none;
+}
+.qualite li::before{
+    content: "-";
+
+}
+.qualite .top li::before{
+    content: "";
+}
+.qualite .box-blue{
+    background-color: #006699;
+    width: 60%;
+    color: #FFF;
+}
+/* region */
+.region {
+    display: block;
+    width: 100%;    
+}
+.region .top-list{
+    height: 25px;
+    width: 90%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: #006699;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+}
+.region img{
+    display: block;
+    width:400px;
+    margin: 15px auto;
+    
+}
+/* presse */
+.presse{
+    display: block;
+    width: 100%;
+    
+}
+.presse h1{
+    color: #006699;
+    width: 200px;
+    margin: 10px auto;
+
+}
+.presse h3,.presse .post ,.presse a,.presse>p{
+    width: 90%;
+    margin: 10px auto;  
+}
+.presse .post{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.presse .post h4{
+    padding-left: 20px;
+    height: 15px;
+    margin-right: 0px;
+    
+}
+.presse .post p{
+    margin-left: 0px;
+    
+    font-size: 15px;
+    cursor: pointer;
+}
+.presse  .decorated{
+    color: #336699;
+    text-decoration: underline;
+}
+.presse a{
+    display: block;
+    font-size: large;
+}
+/* mediatheque */
+.mediatheque{
+    display: block;
+    width: 100%;
+}
+.mediatheque h1{
+    color: #006699;
+    width: 200px;
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+.mediatheque  .box-img{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
